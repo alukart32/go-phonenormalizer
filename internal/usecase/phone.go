@@ -12,9 +12,9 @@ type PhoneService struct {
 	normalizeRule config.PhoneNormalizer
 }
 
-func NewPhoneService(pn config.PhoneNormalizer) *PhoneService {
+func NewPhoneService(cfg config.PhoneNormalizer) NormalizeService {
 	return &PhoneService{
-		normalizeRule: pn,
+		normalizeRule: cfg,
 	}
 }
 

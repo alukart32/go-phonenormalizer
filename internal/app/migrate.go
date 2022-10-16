@@ -24,7 +24,7 @@ const (
 )
 
 func init() {
-	cfg, _ := config.NewConfig(_configPath)
+	cfg, _ := config.New(_configPath)
 	// dbdriver://username:password@host:port/dbname?param1=true&param2=false
 	dbURL := fmt.Sprintf("%s://%s:%s@%s:%d/%s?sslmode=disable",
 		cfg.DB.Driver, cfg.DB.User, cfg.DB.Password, cfg.DB.Host, cfg.DB.Port, cfg.DB.DBname)

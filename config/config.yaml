@@ -4,7 +4,7 @@ db:
   port: 5432
   user: postgres
   password: postgres
-  dbname: dev
+  dbname: phone_normalize
 
 normalizer:
   timeout: 40

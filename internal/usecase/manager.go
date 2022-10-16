@@ -14,10 +14,10 @@ type NormalizePhoneManager struct {
 	phoneService NormalizeService
 }
 
-func NewManager(phoneRepo *repo.PhoneRepo, useCase *PhoneService) NormalizeManager {
+func NewManager(phoneRepo *repo.PhoneRepo, phoneService NormalizeService) NormalizeManager {
 	return &NormalizePhoneManager{
 		repo:         phoneRepo,
-		phoneService: useCase,
+		phoneService: phoneService,
 	}
 }
 
